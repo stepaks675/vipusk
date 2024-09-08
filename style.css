@@ -115,7 +115,7 @@ a{
 }
 .wrapper{
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     background-image: url(bg.png);
     height: 364px;
     padding: 80px 0px 80px 0px;
@@ -139,10 +139,17 @@ a{
 
 #pushkin h1{
     font-weight: 100;
-    font-size:300%;
+    font-size:260%;
 }
 .navmenu{
     gap:60px;
+    height: 80px;
+}
+.meal img{
+    position:absolute;
+    right:0px;
+    top:0px;
+    height: fit-content;
 }
 @media screen and (min-width:1400px){
     body{
@@ -183,6 +190,20 @@ a{
         margin-top:100px;
     }
 
+} 
+@media screen and (max-width: 485px) {
+    .navmenu{
+        margin-top:150px;
+        height: 300px;
+        flex-direction: column;
+    }
+    .meal img{
+        height: 100px;
+        width: 110px;
+        bottom:0px;
+        top:auto;
+        border-radius: 5px;
+    }
 }
 @media screen and (min-width:1200px){
     .wrapper{
@@ -229,14 +250,7 @@ padding-bottom: 50px;
     padding-right:170px;
     position:relative;
 }
-.meal img{
-    position:absolute;
-    right:0px;
-    top:0px;
-    height: fit-content;
-    margin-left:5px;
-    float:left;
-}
+
 .meal .mealname{
     font-weight: 500;
     font-size:125%;
