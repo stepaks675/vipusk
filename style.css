@@ -1,0 +1,271 @@
+*{
+    font-family:"Roboto";
+}
+header{
+    background-color: white;
+    box-shadow: 0px -9px 20px grey;
+    position: sticky;
+    top:0px;
+    z-index:3;
+}
+.container{
+    max-width: 1700px;
+}
+header .container{
+    padding-top:auto;
+    padding-bottom: auto;
+}
+#basket{
+    margin-left:40px;
+    align-content:center;
+}
+@media  screen and (max-width:500px) {
+    #basket{
+        margin:0px;
+        padding: 0px;
+        visibility: hidden;
+    }
+}
+#search{
+    padding:0px;
+    height: 34px;
+    width: 100%;
+    margin-top: 45px;
+    border-width: 0px 0px 1px 0px;
+    border-color: gray;
+    outline:none;
+    margin-bottom: 80px; 
+}
+#rest{
+    margin-bottom: 30px;
+}
+.card-body{
+    padding-left:0px;
+}
+.info{
+    color:gray;
+}
+.card{
+    border-color:white;
+
+}
+.row{
+    justify-content: center;
+}
+#maincont{
+    margin-bottom:100px;
+}
+footer{
+    background-color: #262626;
+    min-height: 552px;
+    padding:0px;
+}
+.hr1{
+    border-width: 1px;
+    border-style:solid;
+    border-color: #979797;
+    opacity: 40%;
+    margin-bottom: 33px;
+}
+#logofoot{
+    margin-bottom:23px;
+}
+#dropdownbtn{
+    background-color: #3B3B3B;
+    border-radius: 0px;
+    padding:12px 3px 12px 15px;
+    color:white;
+    margin-bottom:20px;
+    width: 200px;
+}
+#worldlogo{
+    margin-right:10px;
+
+}
+#btnspan{
+    margin-right:2vw;
+}
+footer p{
+    margin-bottom:3px;
+}
+.icons img{
+    margin-right: 15px;
+}
+.text1{
+    margin:25px 0 25px 0;
+    
+}
+.text1 a {
+    text-decoration: none;
+}
+.text2 a{
+    text-decoration: none;
+}
+.text2{
+    margin-bottom:35px;
+    color:white;
+}
+.downloadlinks img{
+    width: 150px;
+    height:45px;
+    margin-bottom: 25px;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    background-position: center;
+    background-size: cover;
+    background-image: url(bg.png);
+    height: 364px;
+    padding: 80px 0px 80px 0px;
+    align-content: center;
+}
+#pushkin{
+    height:205px;
+    box-shadow: 0px 0px 3px 0px #979797;
+}
+#pushkin .card-body{
+    padding:16px;
+    height: fit-content;
+}
+#pushkin .row{
+    margin:80px 0 10px 0;
+}
+.gridcont{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+}
+
+#pushkin h1{
+    font-weight: 100;
+    font-size:300%;
+}
+.navmenu{
+    gap:60px;
+}
+@media screen and (min-width:1400px){
+    body{
+        font-size:110%;
+    }
+}
+@media screen and (max-width:1400px){
+    body{
+        font-size:100%;
+    }
+}
+@media screen and (max-width:992px){
+    body{
+        font-size:90%;
+    }
+    #pushkin .row{
+        margin:25px 0 20px 0;
+    }
+    .gridcont{
+        grid-template-columns: 1fr;
+    }
+    .navmenu{
+        gap:25px;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        font-size:80%;
+    }
+    .wrapper{
+        height:255px;
+    }
+    #pushkin{
+        height:180px;
+        margin-top:100px;
+    }
+    .navmenu{
+        margin-top:100px;
+    }
+
+}
+@media screen and (min-width:1200px){
+    .wrapper{
+        height:550px;
+    }
+    #pushkin{
+        height: 245px;
+    }
+}
+
+.time-text{
+    background-color: black;
+    color:white;
+    padding: 10px  15px 10px 15px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+}
+.hr2{
+    margin:0;
+    color:#979797;
+}
+.navmenu a{
+    height: fit-content;
+    font-size: 115%;
+    color:#626262;
+}
+.navmenu a:hover{
+    color:#3B3B3B;
+}
+.gridcont{
+padding-bottom: 50px;
+}
+.wrap{
+    margin-top:50px;
+    max-width: 1700px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.meal{
+    height: 160px;
+    box-shadow: 0px 0px 1px 0px #262626;
+    border-radius: 10px;
+    padding-right:170px;
+    position:relative;
+}
+.meal img{
+    position:absolute;
+    right:0px;
+    top:0px;
+    height: fit-content;
+    margin-left:5px;
+    float:left;
+}
+.meal .mealname{
+    font-weight: 500;
+    font-size:125%;
+    position: absolute;
+    left:20px;
+    top:10px;
+    word-break: break-all;
+}
+.meal .mealdesc{
+    font-weight: 400;
+    font-size:90%;
+    color:#626262;
+    position: absolute;
+    left:20px;
+    top:45px;
+    word-break: break-all;
+}
+.meal .mealprice{
+    font-weight: 500;
+    font-size:120%;
+    color:black;
+    position: absolute;
+    left:20px;
+    bottom: 12px;
+    word-break: break-all;
+}
+.tab-content{
+    display: none;
+}
+.tab-content:target{
+    display:block;
+}
